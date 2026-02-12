@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-ts",
+  "version": "1.0.0",
+  "description": "Портфолио разработчика на TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "live-server --port=3000 --watch=dist,index.html,style.css"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "live-server": "^1.2.2"
+  }
+}
