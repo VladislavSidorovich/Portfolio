@@ -1,5 +1,5 @@
 {
-  "buildCommand": "tsc",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "devCommand": "tsc --watch",
   "installCommand": "npm install"
