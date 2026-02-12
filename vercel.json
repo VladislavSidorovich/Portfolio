@@ -1,0 +1,6 @@
+{
+  "buildCommand": "tsc",
+  "outputDirectory": "dist",
+  "devCommand": "tsc --watch",
+  "installCommand": "npm install"
+}
