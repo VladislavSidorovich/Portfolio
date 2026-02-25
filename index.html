@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио веб-разработчика">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+    <title>Портфолио разработчика</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Сидорович Владислав <br> Frontend developer</h1>
+            <p class="tagline">Создаю современные, быстрые и адаптивные веб-приложения</p>
+        </header>
+
+       
+        <section class="section">
+            <h2 class="section-title">Технологии</h2>
+            <div class="technologies-grid">
+                <div class="tech-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">TypeScript</span>
+                        <span class="tech-item">React</span>
+                        <span class="tech-item">Bootstrap</span>
+                        <span class="tech-item">DaisyUI</span>
+                        <span class="tech-item">epub.js</span>
+                        <span class="tech-item">i18next</span>
+                        <span class="tech-item">JSZip</span>
+                        <span class="tech-item">Konva</span>
+                        <span class="tech-item">Material UI</span>
+                        <span class="tech-item">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-item">Express</span>
+                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-item">REST API</span>
+                        <span class="tech-item">Axios</span>
+                        <span class="tech-item">Web3.js</span>
+                        <span class="tech-item">MobX</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-tools"></i> Инструменты</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Vite</span>
+                        <span class="tech-item">Git</span>
+                        <span class="tech-item">Figma</span>
+                        <span class="tech-item">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   
+        <section class="section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <h2 class="section-title">Мои проекты</h2>
+                <div class="projects-counter">
+                    <i class="fas fa-code"></i>
+                    <span id="projectsCount">0 проектов</span>
+                </div>
+            </div>
+            <div class="projects-container" id="projectsContainer"></div>
+            <div class="demo-notice" style="margin-top: 20px; padding: 12px 16px; background-color: #f8f9fa; border-left: 4px solid #6c757d; border-radius: 4px; font-size: 0.95rem;">
+                <i class="fas fa-info-circle"></i>
+                <strong>Примечание:</strong> Все представленные проекты являются демо-версиями для ознакомления.
+            </div>
+        </section>
+
+   
+        <section class="section">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+                <h2 class="section-title" style="margin-bottom: 0;">Закрытые проекты</h2>
+                <span style="background: #2c3e50; color: white; padding: 4px 14px; border-radius: 30px; font-size: 0.8rem; font-weight: 500;"><i class="fas fa-lock"></i> NDA / Конфиденциально</span>
+            </div>
+            <p class="section-content" style="margin-top: -5px; color: #4b636e;">
+                Проекты, разработанные в рамках коммерческой тайны. Детали и исходный код не разглашаются. 
+            </p>
+            <div id="closedProjectsContainer" class="closed-projects-grid"></div>
+            <div class="nda-notice" style="margin-top: 24px; padding: 12px 16px; background: #ecf9f0; border-left: 4px solid #2e7d32; border-radius: 4px; font-size: 0.9rem;">
+                <i class="fas fa-shield-alt" style="color: #2e7d32;"></i>
+                <strong>Почему нет ссылок?</strong> Все проекты в этом разделе разрабатывались под NDA. Публичные демо и репозитории отсутствуют по требованию правообладателей. Фотографии экранов приведены в ознакомительных целях и не раскрывают коммерческую тайну.
+            </div>
+        </section>
+
+      
+        <section class="section">
+            <h2 class="section-title">Контакты</h2>
+            <p class="section-content">Готов к сотрудничеству и новым вызовам</p>
+            <div class="contact-links">
+                <a href="https://t.me/VladislavSidorovich" target="_blank" class="contact-link">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="https://github.com/VladislavSidorovich" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© <span id="currentYear">2026</span> Портфолио разработчика</p>
+        </footer>
+    </div>
+
+
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="close-lightbox" id="closeLightboxBtn">&times;</span>
+            <img id="lightboxImg" src="" alt="Увеличенный просмотр">
+        </div>
+    </div>
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
